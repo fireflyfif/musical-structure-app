@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_01"
+    tools:context="com.example.android.musicalstructure.Discover">
+
+    <TextView
+        android:id="@+id/text_view"
+        style="@style/descTextView"
+        android:text="@string/text_radio_screen" />
+
+    <ImageView
+        android:id="@+id/album_cover"
+        style="@style/album_cover_image.radio"
+        android:contentDescription="@string/contentDescription_albums"
+        android:src="@drawable/album_cover_radio" />
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        style="@style/seekBar" />
+
+    <LinearLayout
+        android:id="@+id/player"
+        style="@style/playerLayout">
+
+        <ImageView
+            style="@style/playerButtons"
+            android:contentDescription="@string/contentDescription_player"
+            android:src="@drawable/ic_skip_previous_white_48dp" />
+
+        <ImageView
+            style="@style/playerButtons.Play"
+            android:contentDescription="@string/contentDescription_player"
+            android:src="@drawable/ic_play_02" />
+
+        <ImageView
+            style="@style/playerButtons"
+            android:contentDescription="@string/contentDescription_player"
+            android:src="@drawable/ic_skip_next_white_48dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

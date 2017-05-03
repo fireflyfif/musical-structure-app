@@ -1,0 +1,155 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <!-- Action Bar. -->
+    <style name="ActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:displayOptions">homeAsUp</item>
+    </style>
+
+    <!-- TextView Description. -->
+    <style name="descTextView" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/text_view_padding</item>
+        <item name="android:layout_marginBottom">@dimen/text_view_padding</item>
+        <item name="android:textColor">@color/colorWhiteTransparent80</item>
+        <item name="android:background">@color/colorWhiteTransparent25</item>
+    </style>
+
+    <!-- Buttons. -->
+    <style name="buttons" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margin_20dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <!-- Search EditText. -->
+    <style name="searchEditText" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:drawablePadding">@dimen/padding_10dp</item>
+        <item name="android:layout_margin">@dimen/margin_10dp</item>
+        <item name="android:background">@color/colorWhiteTransparent25</item>
+        <item name="android:padding">@dimen/text_view_padding</item>
+        <item name="android:textColorHint">@color/colorWhiteTransparent80</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <!-- Genre TextView. -->
+    <style name="genreTextView" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/padding_10dp</item>
+        <item name="android:paddingTop">@dimen/padding_10dp</item>
+        <item name="android:textSize">@dimen/genre_text_size</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Divider. -->
+    <style name="divider" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_height</item>
+        <item name="android:background">@color/colorWhiteTransparent80</item>
+        <item name="android:layout_marginLeft">@dimen/margin_10dp</item>
+        <item name="android:layout_marginRight">@dimen/margin_10dp</item>
+        <item name="android:layout_marginBottom">@dimen/margin_6dp</item>
+    </style>
+
+    <!-- Horizontal View Gallery. -->
+    <style name="horizontalScroll" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fillViewport">true</item>
+        <item name="android:paddingBottom">@dimen/padding_10dp</item>
+    </style>
+
+    <!-- Album Cover ImageView. -->
+    <style name="album_cover_image" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/padding_10dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="album_cover_image.playing">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_margin">@dimen/margin_album_cover</item>
+    </style>
+
+    <style name="album_cover_image.radio">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_below">@+id/text_view</item>
+    </style>
+
+    <!-- Player Buttons Layout. -->
+    <style name="playerLayout" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingBottom">@dimen/margin_10dp</item>
+    </style>
+
+    <!-- Player Buttons. -->
+    <style name="playerButtons" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="playerButtons.Play">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/padding_10dp</item>
+    </style>
+
+    <!-- Seek Bar. -->
+    <style name="seekBar" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_above">@+id/player</item>
+        <item name="android:layout_margin">@dimen/margin_20dp</item>
+
+    </style>
+
+    <!-- ListView Songs. -->
+    <style name="listView" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/text_view_padding</item>
+    </style>
+
+    <!-- Playlist Item. -->
+    <style name="playlistTextView" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/margin_10dp</item>
+        <item name="android:padding">@dimen/text_view_padding</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@color/colorWhiteTransparent25</item>
+    </style>
+
+    <!-- Song Name TextView. -->
+    <style name="songTextView" parent="AppTheme">
+        <item name="android:layout_width">@dimen/play_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/padding_10dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/song_name_size</item>
+    </style>
+
+</resources>

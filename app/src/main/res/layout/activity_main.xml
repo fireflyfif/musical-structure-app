@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_01"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicalstructure.MainActivity">
+
+    <TextView
+        style="@style/descTextView"
+        android:text="@string/text_home_screen" />
+
+    <Button
+        android:id="@+id/discover_text_view"
+        style="@style/buttons"
+        android:background="@drawable/mybutton"
+        android:text="@string/button_discover" />
+
+    <Button
+        android:id="@+id/playlist_text_view"
+        style="@style/buttons"
+        android:background="@drawable/mybutton"
+        android:text="Playlist" />
+
+    <Button
+        android:id="@+id/radio_text_view"
+        style="@style/buttons"
+        android:background="@drawable/mybutton"
+        android:text="Radio" />
+
+
+</LinearLayout>

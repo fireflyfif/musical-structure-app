@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_01"
+    android:gravity="bottom"
+    sothree:umanoDragView="@+id/dragView"
+    sothree:umanoOverlay="true"
+    sothree:umanoPanelHeight="@dimen/umanoPanelHeight"
+    sothree:umanoParallaxOffset="@dimen/umanoParallaxOffset"
+    sothree:umanoScrollableView="@+id/list"
+    sothree:umanoShadowHeight="@dimen/umanoShadowHeight">
+
+    <!-- MAIN CONTENT -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/relativeLayout_height"
+        android:paddingBottom="@dimen/text_view_padding">
+
+
+        <ImageView
+            android:id="@+id/album_image"
+            style="@style/album_cover_image.playing"
+            android:contentDescription="@string/contentDescription_albums"
+            android:src="@drawable/album_cover_14" />
+
+        <TextView
+            android:id="@+id/now_playing_text_view"
+            style="@style/descTextView"
+            android:text="@string/now_playing_screen" />
+
+        <ListView
+            android:id="@+id/songs_list"
+            style="@style/listView"
+            android:layout_below="@id/album_image" />
+
+    </RelativeLayout>
+
+
+    <!-- SLIDING LAYOUT -->
+    <LinearLayout
+        android:id="@+id/dragView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_01"
+        android:clickable="true"
+        android:focusable="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/umanoPanelHeight"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/songTextView"
+                android:text="@string/song_shortcut" />
+
+            <ImageView
+                style="@style/playerButtons"
+                android:contentDescription="@string/contentDescription_player"
+                android:src="@drawable/ic_skip_previous_white_48dp" />
+
+            <ImageView
+                style="@style/playerButtons.Play"
+                android:contentDescription="@string/contentDescription_player"
+                android:src="@drawable/ic_play_arrow_white_48dp" />
+
+            <ImageView
+                style="@style/playerButtons"
+                android:contentDescription="@string/contentDescription_player"
+                android:src="@drawable/ic_skip_next_white_48dp" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/descTextView"
+            android:text="@string/text_song_detail_screen" />
+
+        <ImageView
+            style="@style/album_cover_image"
+            android:contentDescription="@string/contentDescription_albums"
+            android:src="@drawable/album_cover_14" />
+
+        <SeekBar style="@style/seekBar" />
+
+        <LinearLayout
+            android:id="@+id/player"
+            style="@style/playerLayout">
+
+            <ImageView
+                style="@style/playerButtons"
+                android:contentDescription="@string/contentDescription_player"
+                android:src="@drawable/ic_skip_previous_white_48dp" />
+
+            <ImageView
+                style="@style/playerButtons.Play"
+                android:contentDescription="@string/contentDescription_player"
+                android:src="@drawable/ic_play_02" />
+
+            <ImageView
+                style="@style/playerButtons"
+                android:contentDescription="@string/contentDescription_player"
+                android:src="@drawable/ic_skip_next_white_48dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

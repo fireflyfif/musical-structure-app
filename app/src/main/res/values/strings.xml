@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Musical App</string>
+    <string name="title_activity_temp">temp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="button_discover">Discover</string>
+    <string name="button_playlist">Playlist</string>
+    <string name="button_radio">Radio</string>
+
+    <string name="search_edit_text">Search Artist or Song</string>
+    <string name="genre_pop">Pop</string>
+    <string name="genre_rock">Rock</string>
+    <string name="genre_chill">Chill</string>
+
+    <string name="contentDescription_albums">Sample of an album cover.</string>
+    <string name="contentDescription_player">Player buttons.</string>
+
+    <string name="text_home_screen">Home Screen.\nIt has three main Buttons which
+        use explicit intents for three different activities: Discover, Playlist, Radio.\nPlease, click
+        on any of the three Buttons below.</string>
+    <string name="text_discover_screen">Discover and Browse Screen.\nIt will have
+        one Search section, where the user searches for Artists or Songs from the SoundCloud. The rest
+        of the screen will be populated with main genres and music styles categories. Each category
+        will contain a horizontal scroll view of albums and artists.
+        \nPlease, click on any of the first two album covers. They use explicit intents to the next
+        "Now Playing" screen.</string>
+    <string name="text_playlist_screen">Playlist Activity Screen.\nIt will contain all
+        of the user\'s existed Playlist. +Add New field creates a new Playlist.\nPlease,
+        click on any of the following Playlist. Each of them uses explicit intent to the next Activity
+        - Now Playing Screen.</string>
+    <string name="now_playing_screen">Detailed Playlist Screen.\nIt will contain an image of the
+        Album/Artist cover and a Playlist with songs. A custom Adapter with a new Class will be
+        used for the ListView of songs.\nOn the bottom of the page there is a draggable sliding up panel
+        to another view - Song Detail Screen. There is a button for Play and Pause if the View is
+        collapsed.\nImplemented Library: Android Sliding Up Panel.\nIt will be used ExoPlayer Library
+        for implementing the MediaPlayer.</string>
+    <string name="text_radio_screen">Radio Screen.\nIt will contain a Media Player that streams music
+        from the Cloud. Library for streaming music: RadioPlayerService. \nIt is an Android service
+        library which uses AAC Player.</string>
+    <string name="text_song_detail_screen">Song Detail Screen.\nA cover image of the playing Album/Artist
+        \nIt will be used ExoPlayer Library for implementing the MediaPlayer.</string>
+
+    <string name="song_shortcut">Song Name, Artist Name</string>
+
+    <string name="playlist_add">+ Add New</string>
+    <string name="playlist_relax">Relax</string>
+    <string name="playlist_coding">Coding Time</string>
+    <string name="playlist_party">Party</string>
+    <string name="playlist_summer">Summer Hits</string>
+
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_01"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicalstructure.Discover">
+
+    <TextView
+        style="@style/descTextView"
+        android:text="@string/text_playlist_screen" />
+
+    <TextView
+        android:id="@+id/playlist_add"
+        style="@style/playlistTextView"
+        android:text="@string/playlist_add" />
+
+    <TextView
+        android:id="@+id/playlist_1"
+        style="@style/playlistTextView"
+        android:text="@string/playlist_relax"/>
+
+    <TextView
+        android:id="@+id/playlist_2"
+        style="@style/playlistTextView"
+        android:text="@string/playlist_coding" />
+
+    <TextView
+        android:id="@+id/playlist_3"
+        style="@style/playlistTextView"
+        android:text="@string/playlist_party" />
+
+    <TextView
+        android:id="@+id/playlist_4"
+        style="@style/playlistTextView"
+        android:text="@string/playlist_summer" />
+
+
+</LinearLayout>
